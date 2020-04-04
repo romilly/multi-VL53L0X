@@ -4,9 +4,16 @@ I'm experimenting to see how easy it is to connect multiple VL53L0X sensors to a
 
 I have two approaches in mind:
 
-1. Use an Arduino slave that selectively enables the chips and gives each a unique I2C address
 1. Use an I2C multiplexer
+1. Use an Arduino SPI slave that selectively enables the chips and gives each a unique I2C address
 
 
+## Saturday 04 April 2020
 
+I successfully ran the multiplexer on an Adafruit CircuitPython board and a veteran Raspberry Pi a couple of days ago.
 
+I'm currently working thorough a series of steps towards the SPI slave solution.
+
+More info on my [blog](https://blog.rareschool.com/).
+
+Code is here.
