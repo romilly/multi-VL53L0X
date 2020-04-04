@@ -1,4 +1,12 @@
-# This example shows using two  sensors attached to TCA9548A channels 0 and 1.
+"""
+This example shows how to use two VL53L0X sensors attached to TCA9548A channels 0 and 1.
+
+lightly adapted from the Adafruit example at
+https://circuitpython.readthedocs.io/projects/tca9548a/en/latest/
+and the VL53L0X driver example at
+https://circuitpython.readthedocs.io/projects/vl53l0x/en/latest/
+"""
+
 import time
 import board
 import busio
