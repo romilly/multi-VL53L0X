@@ -1,6 +1,7 @@
 
 // Written by Nick Gammon
 // February 2011
+// copied from http://www.gammon.com.au/spi
 
 
 #include <SPI.h>
