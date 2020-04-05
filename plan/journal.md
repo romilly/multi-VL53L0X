@@ -17,3 +17,9 @@ I'm currently working thorough a series of steps towards the SPI slave solution.
 More info on my [blog](https://blog.rareschool.com/).
 
 Code is here.
+
+## Sunday 05 April 2020
+
+Time to tidy up and extend the code.
+
+I want to use iteration and arrays to support 1-8 sensors.

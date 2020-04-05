@@ -1,9 +1,7 @@
 // Adapted from from http://www.gammon.com.au/spi
 
-#include <SPI.h>
 
-const int SENSORS = 2;
-char buffer[100];
+#include <SPI.h>
 
 void setup (void)
 {
@@ -33,12 +31,13 @@ void loop (void)
   digitalWrite(SS, LOW);    // SS is pin 10
 
   // send request
-  for (int i=0; i < SENSORS; i++) {
-    int distance;
+  for (int i=0; i < 2; i++) {
+    int result;
     c = i & 0x01;
-    distance = 2 * SPI.transfer (c); // distance was halved by the slave
-    sprintf(buffer, "Distance %u = %u mm", i, distance);
-    Serial.println(buffer);
+    result = SPI.transfer (c);
+    Serial.print(i);
+    Serial.print('=');
+    Serial.println(result);
 
   }
 
