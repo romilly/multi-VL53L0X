@@ -23,3 +23,7 @@ Code is here.
 Time to tidy up and extend the code.
 
 I want to use iteration and arrays to support 1-8 sensors.
+
+## Monday 06 April 2020
+
+New code is working.

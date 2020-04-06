@@ -35,8 +35,7 @@ void loop (void)
   // send request
   for (int i=0; i < SENSORS; i++) {
     int distance;
-    c = i & 0x01;
-    distance = 2 * SPI.transfer (c); // distance was halved by the slave
+    distance = 2 * SPI.transfer(i); // distance was halved by the slave
     sprintf(buffer, "Distance %u = %u mm", i, distance);
     Serial.println(buffer);
 
