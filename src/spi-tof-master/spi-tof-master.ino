@@ -1,4 +1,4 @@
-// Adapted from from http://www.gammon.com.au/spi
+// Adapted from http://www.gammon.com.au/spi
 
 #include <SPI.h>
 
